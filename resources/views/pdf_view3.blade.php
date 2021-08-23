@@ -35,7 +35,6 @@
             </thead>
 
             <body>
-                {{-- {{ var_dump($course_purchased[0]->product->p_title)}} --}}
                 @foreach ($purchases as $item)
                     <tr>
                         <td class="border px-4 py-2">{{ $item->id }}</td>

@@ -32,6 +32,11 @@
                     <option value="1.41" name="USD" id="USD">$</option>
                     <option value="584.35" name="NGN" id="NGN">&#8358</option>
                 </select>
+                <!-- <select id="forex-rate" name="rate" class="d-inline float-right total" onchange="symbolChange(this)">
+                    <option value="0" id="base" name="GBP" class="cur" selected>&#163</option>
+                    <option value="1.41" name="USD" id="USD">$</option>
+                    <option value="584.35" name="NGN" id="NGN">&#8358</option>
+                </select> -->
             </div>
         </div>
     </div>
