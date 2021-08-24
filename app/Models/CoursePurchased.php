@@ -13,8 +13,9 @@ class CoursePurchased extends Model
         'student_id',
         'product_id',
         'reference_number',
+        'created_at',
     ];
-    protected $dates = ['created_at', 'updated_at'];
+    protected $dates = ['updated_at'];
 
 
 
@@ -28,4 +29,3 @@ class CoursePurchased extends Model
         return $this->belongsTo(product::class, 'product_id');
     }
 }
-

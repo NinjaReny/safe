@@ -38,6 +38,7 @@ return array(
     'App\\Http\\Livewire\\Currency' => $baseDir . '/app/Http/Livewire/Currency.php',
     'App\\Http\\Livewire\\Products' => $baseDir . '/app/Http/Livewire/Products.php',
     'App\\Http\\Livewire\\Purchases' => $baseDir . '/app/Http/Livewire/Purchases.php',
+    'App\\Http\\Livewire\\Users' => $baseDir . '/app/Http/Livewire/Users.php',
     'App\\Http\\Middleware\\AdminCheck' => $baseDir . '/app/Http/Middleware/AdminCheck.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',

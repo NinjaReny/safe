@@ -32,6 +32,9 @@
                         <th class="px-4 py-2">
                             <div class="flex-items-center">Price</div>
                         </th>
+                        <th class="px-4 py-2">
+                            <div class="flex-items-center">Purchase Date</div>
+                        </th>
                     </tr>
                 </thead>
 
@@ -44,6 +47,7 @@
                             <td class="border px-4 py-2">{{ (isset($item->student->name) ? $item->student->name : '' ) }}</td>
                             <td class="border px-4 py-2">{{ $item->reference_number }}</td>
                             <td class="border px-4 py-2">{{ $item->product->p_amount }}</td>
+                            <td class="border px-4 py-2">{{ $item->created_at }}</td>
                         </tr>
                     @endforeach
                 </body>

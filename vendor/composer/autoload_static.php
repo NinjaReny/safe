@@ -693,6 +693,7 @@ class ComposerStaticInit94efc4b09c5c1962f0a1a71dbf6801d2
         'App\\Http\\Livewire\\Currency' => __DIR__ . '/../..' . '/app/Http/Livewire/Currency.php',
         'App\\Http\\Livewire\\Products' => __DIR__ . '/../..' . '/app/Http/Livewire/Products.php',
         'App\\Http\\Livewire\\Purchases' => __DIR__ . '/../..' . '/app/Http/Livewire/Purchases.php',
+        'App\\Http\\Livewire\\Users' => __DIR__ . '/../..' . '/app/Http/Livewire/Users.php',
         'App\\Http\\Middleware\\AdminCheck' => __DIR__ . '/../..' . '/app/Http/Middleware/AdminCheck.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
