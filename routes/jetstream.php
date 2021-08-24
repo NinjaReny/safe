@@ -34,10 +34,13 @@ Route::group(['middleware' => config('jetstream.middleware', ['web'])], function
         })->name('users');
         
 
-        //reporting
+        //reportingRoute
         Route::get('/users/pdf', [Users::class, 'createPDF'])->name('users.pdf');
         Route::get('/purchases/pdf', [Purchases::class, 'createPDF'])->name('purchases.pdf');
         Route::get('/products/pdf', [Products::class, 'createPDF'])->name('products.pdf');
+
+        //chartRoute
+        Route::get('line-chart', [Purchases::class, 'showChart']);
 
         Route::get('/purchases', function () {
             return view('purchases');

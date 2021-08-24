@@ -4,7 +4,8 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\CoursePurchased;
-Use PDF;
+use PDF;
+
 
 
 class Purchases extends Component
@@ -15,7 +16,7 @@ class Purchases extends Component
         // $data = CoursePurchased::join('course_purchased', 'course_purchased.student_id', '=', 'student.student_id')
         // ->join('products', 'products.product_id', '=', 'products.id')
         // ->get(['course_purchased.student_id', 'course_purchased.reference_number' , 'products.product_id' ]);
-        
+
 
         // $data = CoursePurchased::all()->first();
         // dd($data->product->p_title);
@@ -45,4 +46,6 @@ class Purchases extends Component
     //     ->join('products', 'products.product_id', '=', 'products.id')
     //     ->get(['coursepurchased.*', 'course_purchased.product_id', 'course_purchased.reference_number']);
     // }
+
+
 }
