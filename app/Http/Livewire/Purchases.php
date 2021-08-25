@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 use App\Models\CoursePurchased;
+use App\Models\Product;
 use PDF;
 
 
@@ -47,5 +48,25 @@ class Purchases extends Component
     //     ->get(['coursepurchased.*', 'course_purchased.product_id', 'course_purchased.reference_number']);
     // }
 
+    public function getMonthlySum(Product $date)
+    {
+        $data = Product::all();
+        $year = $date->year;
+        $month = $date->month;
 
+        if ($month < 10) {
+            $month = '0' . $month;
+        }
+
+        $search = $year . '-' . $month;
+
+        $revenues = parent::where('date', 'like', $search . '%')->get();
+
+        $sum = 0;
+        foreach ($revenues as $revenue) {
+            $sum += $revenue->revenue;
+        }
+
+        return $sum;
+    }
 }

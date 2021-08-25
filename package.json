@@ -26,6 +26,7 @@
         "@ckeditor/ckeditor5-core": "^29.1.0",
         "@ckeditor/ckeditor5-image": "^29.1.0",
         "@ckeditor/ckeditor5-ui": "^29.1.0",
-        "chart.js": "^3.5.1"
+        "chart.js": "^3.5.1",
+        "livewire": "^0.6.1"
     }
 }

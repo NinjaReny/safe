@@ -145,6 +145,8 @@ Route::get('/inspiring-student', function () {
     return view('inspiringstudent');
 });
 
+Route::get('/verifyUser/{uuid}', [App\Http\Controllers\StdRegisterController::class,'verifyUserAccount'])->name('verify-user');
+
 require_once __DIR__ . '/jetstream.php';
 
 Route::middleware(['auth:sanctum', 'verified', 'student'])->group(function ()

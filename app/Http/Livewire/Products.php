@@ -7,8 +7,6 @@ use App\Models\Product;
 use App\Models\CurrencyRate;
 use PDF;
 
-
-
 class Products extends Component
 {
 

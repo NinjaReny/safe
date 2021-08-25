@@ -1,14 +1,25 @@
-<div class="p-6 sm:px-20 bg-white border-b border-gray-200">
-    <div class="mt-8 text-2xl flex justify-between">
-        <div>Products</div>
-        <div class="mr-2">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Example 2</title>
+</head>
+<body>
+    <header class="clearfix">
+        <div id="logo">
+            <div>
+                <a href="{{ url('/') }}" class="logo mr-auto"><img src={{ asset('img/acedemy.png') }} alt=""></a>
+            </div>
         </div>
-    </div>
-
-
-    {{-- {{ $query }} --}}
-    <div class="mt-6">
-
+        {{-- <div id="company">
+            <h2 class="name">Company Name</h2>
+            <div>455 Foggy Heights, AZ 85004, US</div>
+            <div>(602) 519-0450</div>
+            <div><a href="mailto:company@example.com">company@example.com</a></div>
+        </div> --}}
+    </header>
+    <main>
         <table class="table-auto-w-full">
             <thead>
                 <tr>
@@ -42,4 +53,9 @@
                 @endforeach
             </body>
         </table>
-    </div>
+    </main>
+    <footer>
+        Invoice was created on a computer and is valid without the signature and seal.
+    </footer>
+</body>
+</html>

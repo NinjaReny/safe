@@ -1,18 +1,20 @@
-<div class="p-6 sm:px-20 bg-white border-b border-gray-200">
-    <div class="mt-8 text-2xl flex justify-between">
-        <div>course purchased</div>
-        <div class="mr-2">
+<!DOCTYPE html>
+<html lang="en">
 
-            {{-- <x-jet-button wire:click="confirmProductAdd" class="bg-blue-500 hover:bg-blue-700">
-                Add Currency
-            </x-jet-button> --}}
+<head>
+    <meta charset="utf-8">
+    <title>Example 2</title>
+</head>
+
+<body>
+    <header class="clearfix">
+        <div id="logo">
+            <div>
+                <a href="{{ url('/') }}" class="logo mr-auto"><img src={{ asset('img/acedemy.png') }} alt=""></a>
+            </div>
         </div>
-    </div>
-
-
-    {{-- {{ $query }} --}}
-    <div class="mt-6">
-
+    </header>
+    <main>
         <table class="table-auto-w-full">
             <thead>
                 <tr>
@@ -51,4 +53,10 @@
                 @endforeach
             </body>
         </table>
-    </div>
+    </main>
+    <footer>
+        Invoice was created on a computer and is valid without the signature and seal.
+    </footer>
+</body>
+
+</html>

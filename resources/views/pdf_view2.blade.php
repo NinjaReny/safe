@@ -1,6 +1,6 @@
 <div class="mt-6">
     <div class="flex justify-between">
-        <h1>Product List</h1>
+        <h1>User List</h1>
         <table class="table-auto-w-full">
             <thead>
                 <tr>

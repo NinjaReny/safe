@@ -91,6 +91,10 @@
                     </div>
                 @endif
 
+                <div class="mb-4 font-medium text-sm text-green-600">
+                    @include('flash-message')
+                </div>
+
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
 
